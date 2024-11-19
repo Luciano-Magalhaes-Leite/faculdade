@@ -1,42 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prática</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            padding-top: 20px;
-        }
-    </style>
+    <title>Viagem dos sonhos</title>
 </head>
 <body>
-    <div class="container">
-        <header class="text-center mb-4">
-            <h1>GESTÃO DE PROJETOS</h1>
-            <p>Aprenda a gerir projetos com qualidade.</p>
-        </header>
-        <main>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="https://setting.com.br/wp-content/uploads/2018/04/ferramentas-gestao-de-projetos.jpg" class="card-img-top" alt="Imagem qualquer">
-                        <div class="card-body">
-                            <h5 class="card-title">Nosso curso é focado na gestão de projetos.</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum harum adipisci, cumque nostrum odio ipsum omnis magnam tempore magni amet voluptatum voluptas recusandae dolorem esse vel earum labore fugiat provident.</p>
-                            <a href="#" class="btn btn-primary">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="text-center mt-4">
-            <p>Luciano Magalhães&reg;</p>
-        </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <header>
+            <nav>
+        <ul>
+                    <li>Pacotes</li>
+                    <li>Taxa</li>
+                    <li>Contato</li>
+        </ul>
+            </nav>
+        <H1>Venha realizar a viagem dos seus sonhos!</H1>
+    </header>
+
+    <section>
+        <h2>Conheça nossos pacotes</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nobis ipsum exercitationem, veritatis magni saepe, odit ab beatae omnis consequuntur iusto unde repellendus, quod error nulla quis nihil eum. Laboriosam. 
+            <br><br> 
+            <a href="https://www.lipsum.com"> Clica aqui para mais informação</a>
+            <hr>
+        </p>
+        <figure>
+            <img src="img/Gramado.jpg" alt="Imagem de motanhas de Gramado">
+            <figcaption>Gramado</figcaption>
+        </figure>
+        <figure>
+            <img src="img/Porto Seguro.jpg" alt="Prais de Porto Seguro">
+            <figcaption>Porto Seguro</figcaption>
+        </figure>
+        <figure><img src="img/Rio de Janeiro.jpg" alt="Vista do Cristo Redentor Rio de Janeiro"></figure>
+        <figcaption>Rio de Janeiro</figcaption>
+
+    </section>
+
+    <video controls width="350px" height="250px">
+        <source src="../Videos/Beautiful Destinations in Rio de Janeiro, Brazil.mp4" type="video/mp4">
+        <source src="../Videos/Beautiful Destinations In Rio De Janeiro, Brazil-1.webm" type="video/webm">
+        Seu navegador não suporta o formato do video <a href="../Videos/Beautiful Destinations in Rio de Janeiro, Brazil.mp4">Clica aqui para baixar.</a>
+    </video>
+    <br><br>
+    <section>
+        <h2>Orçamento</h2>
+        <form method="GET" action="">
+            <fieldset>
+                <legend>Dados da viagem</legend>
+                <label>Nome:</label><br>
+                <input type="text" required name="nome"><br><br>
+    
+                <label>Email:</label><br>
+                <input type="email" required name="Email"><br><br>
+    
+                <label>Data de Ida</label><br>
+                <input type="date" name="dataIda"><br><br>
+    
+                <label>Data de Volta</label><br>
+                <input type="date" name="dataVolta"><br><br>
+    
+                <label>Quantos de pessoas</label><br>
+                <input type="number" required name="pessoas"><br><br>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Quais serviços deseja contratar?</legend>
+            <label>
+                <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+            </label>
+            <label>
+                <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+            </label>
+            <label>
+                <br><input type="checkbox" name="veiculos" value="Veiculos">Reserva de veiculos
+            </label>
+            </fieldset>    
+
+            <fieldset>
+                <legend>Forma de pagamento</legend>
+                <label>
+                    <br><input type="radio" name="pagamento" value="cartao">Cartão de crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="pagamento" value="boleto">Boleto bancário
+                </label>
+                <label>
+                    <br><input type="radio" name="pagamento" value="pix">Pix
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo para pegamento</legend>
+                <select name="prazo">
+                    <option value=" "selected> </option>
+                    <option value="A Vista">A Vista></option>
+                    <option value="5x">5x sem juros</option>
+                    <option value="10x">10x com juros</option>
+                </select>
+            </fieldset>
+ 
+            <br><br>
+
+            <label>Comentario:</label><br>
+            <textarea rows="5" name="comentario"></textarea><br><br>
+ 
+            <button>Salvar</button>
+
+        </form>
+    </section>
+    <footer>
+        <p>Desenvolvido por Akira Ishigami</p>
+    </footer>
 </body>
 </html>
